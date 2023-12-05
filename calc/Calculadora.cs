@@ -36,7 +36,18 @@ namespace calc
             };
 
         }
-        
+        public int Soma()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("ADIÇÃO\n");
+
+            this._num1 = default;
+            this._num2 = default;
+
+            this.Entrada();
+
+            return this._num1 + this._num2;
+        }
        
     }
 }
