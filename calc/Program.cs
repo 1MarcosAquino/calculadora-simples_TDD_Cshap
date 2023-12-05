@@ -28,7 +28,7 @@ while (finalizar)
             break;
 
         case 3:
-            decimal multiplicacao = calc.Soma();
+            decimal multiplicacao = calc.Multiplicacao();
             Console.WriteLine($"\nResultado: {multiplicacao}\n");
             break;
 

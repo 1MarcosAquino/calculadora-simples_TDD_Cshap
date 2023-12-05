@@ -12,6 +12,7 @@ public class CalculadoraTeste
     private Calculadora calcTeste = new Calculadora();
     private StringReader entradaDoConsole = new StringReader($"{10}\n {2}");
     private StringWriter saidaDoConsole = new StringWriter();
+
     [Fact]
     public void SomaTeste()
     {
@@ -42,4 +43,23 @@ public class CalculadoraTeste
 
         Assert.Equal(resultado, resultadoEsperado);
     }
+
+    [Fact]
+    public void MultiplicacaoTeste()
+    {
+
+        Console.SetIn(this.entradaDoConsole);
+        Console.SetOut(this.saidaDoConsole);
+
+        decimal resultado = this.calcTeste.Multiplicacao();
+        decimal resultadoEsperado = 20m;
+
+        Console.SetIn(new StreamReader(Console.OpenStandardInput()));
+        Console.SetOut(new StreamWriter(Console.OpenStandardOutput()));
+
+        Assert.Equal(resultado, resultadoEsperado);
+
+    }
+
+
 }

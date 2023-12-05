@@ -61,5 +61,18 @@ namespace calc
             return this._num1 - this._num2;
         }
 
+        public decimal Multiplicacao()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("SUBTRAÇÂO\n");
+
+            this._num1 = default;
+            this._num2 = default;
+
+            this.Entrada();
+
+            return this._num1 * this._num2;
+        }
+
     }
 }
