@@ -1,3 +1,7 @@
+using System;
+using System.IO;
+using Xunit;
+
 using calc;
 
 namespace calculadora.tests;
@@ -6,7 +10,7 @@ public class CalculadoraTeste
 {
     
     private Calculadora calcTeste = new Calculadora();
-    private StringReader entradaDoConsole = new StringReader("${10}\n{10}");
+    private StringReader entradaDoConsole = new StringReader($"{10}\n {10}");
     private StringWriter saidaDoConsole = new StringWriter();
     [Fact]
     public void SomaTeste()
