@@ -74,5 +74,18 @@ namespace calc
             return this._num1 * this._num2;
         }
 
+        public decimal Divisao()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("DIVISÂO\n");
+
+            this._num1 = default;
+            this._num2 = default;
+
+            this.Entrada();
+
+            return this._num1 / this._num2;
+        }
+
     }
 }

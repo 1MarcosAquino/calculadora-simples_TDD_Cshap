@@ -33,7 +33,7 @@ while (finalizar)
             break;
 
         case 4:
-            decimal divisao = calc.Soma();
+            decimal divisao = calc.Divisao();
             Console.WriteLine($"\nResultado: {divisao}\n");
             break;
 
