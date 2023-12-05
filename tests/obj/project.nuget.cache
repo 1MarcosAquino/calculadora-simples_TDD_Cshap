@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gPhX9VnrDJ8oJXIVp40BnsTTZBBMp+OPJZdCSnIckKa0MykLPYCvi/jZygKqMgXiVqiPkaWzU2b6I4PqyKRBYA==",
+  "dgSpecHash": "2bhYYfwx/qeWr4FFGhfmEPSb22s5J2DQSXsZWO/1r+4dUjpmiZJZVVTu6OSCu5+IPEcLP/2i8wkPORvN/tsO1Q==",
   "success": true,
   "projectFilePath": "/home/marc0/dev/meus-projetos/c/calculadora-simples_TDD_Cshap/tests/calculadora.tests.csproj",
   "expectedPackageFiles": [
