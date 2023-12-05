@@ -1,7 +1,3 @@
-using System;
-using System.IO;
-using Xunit;
-
 using calc;
 
 namespace calculadora.tests;

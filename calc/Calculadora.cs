@@ -59,7 +59,7 @@ namespace calc
         public decimal Multiplicacao()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("SUBTRAÇÂO\n");
+            Console.WriteLine("MULTIPLICAÇÂO\n");
 
             this._num1 = default;
             this._num2 = default;
