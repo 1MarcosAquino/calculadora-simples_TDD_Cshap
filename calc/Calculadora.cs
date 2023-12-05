@@ -7,9 +7,9 @@ namespace calc
 {
     public class Calculadora
     {
-        
-        private int _num1 = default;
-        private int _num2 = default;
+
+        private decimal _num1 = default;
+        private decimal _num2 = default;
         private void Entrada()
         {
             string message = this._num1 == default ? "primeiro" : "segundo";
@@ -18,7 +18,7 @@ namespace calc
             Console.Write($"Digite o {message} número: ");
 
             Console.ForegroundColor = ConsoleColor.Red;
-            if (int.TryParse(Console.ReadLine(), out int num))
+            if (decimal.TryParse(Console.ReadLine(), out decimal num))
             {
                 if (message == "primeiro")
                 {
@@ -36,7 +36,7 @@ namespace calc
             };
 
         }
-        public int Soma()
+        public decimal Soma()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("ADIÇÃO\n");
@@ -48,6 +48,18 @@ namespace calc
 
             return this._num1 + this._num2;
         }
-       
+        public decimal Subtracao()
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("SUBTRAÇÂO\n");
+
+            this._num1 = default;
+            this._num2 = default;
+
+            this.Entrada();
+
+            return this._num1 - this._num2;
+        }
+
     }
 }
